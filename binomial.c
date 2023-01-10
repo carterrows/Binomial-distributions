@@ -28,7 +28,7 @@ int main()
     printf("\nP(X = %.0lf) = %.5lf \n", x, equal);
 
     //probability X <= x
-    double lessEqual;
+    double lessEqual = 0;
     for(int i = 0; i <= x; i++)
     {
         lessEqual += binomial(sampleSpace, p, i);
@@ -41,7 +41,7 @@ int main()
     printf("P(X < %.0lf) = %.5lf\n", x, less);
 
     //probability X >= x
-    double greaterEqual;
+    double greaterEqual = 0;
     for(int j = 0; j < x; j++)
     {
         greaterEqual += binomial(sampleSpace, p, j);
